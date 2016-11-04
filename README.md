@@ -1,4 +1,4 @@
-# _Pizza Website_
+# _Amaro Pizza Website_
 
 #### _Javascript object practice, 11/4/2016_
 
@@ -20,28 +20,27 @@ _This website should:_
 
 ## Setup/Installation Requirements
 
-* __
-* __
-* __
-* __
-* __
+* _Visit on gh-pages at http://ekillops.github.io/pizza-amaro/index.html_
 
-_{}_
+ _OR_
+
+* _Clone the repository and open in your web browser_
+
 
 ## Known Bugs
 
-_{}_
+_None yet._
 
 ## Support and contact details
 
-_{}_
+_Send me a message on github_
 
 ## Technologies Used
 
-_{HTML, CSS, Javascript, Bootstrap, jQuery}_
+_HTML, CSS, Javascript, Bootstrap, jQuery_
 
 ### License
 
-*{}*
+*GPL*
 
 Copyright (c) 2016 **_{List of contributors or company name}_**

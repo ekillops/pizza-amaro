@@ -7,17 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Amaro</title>
+    <title>Amaro</title>
   </head>
   <body>
     <div class="container-fluid">
 
       <div class="page-header">
-        <h1>Pizza Amaro</h1>
+        <h1>Amaro</h1>
         <p>Wood fired pizza with your choice of toppings.
       </div>
       <br>
       <form id="pizza-order">
+        <img src="img/new-rose-small.png" id="rose-logo-top"class="img-responsive" alt="Rose Logo" />
+        <p id="defaultPizza">All pizzas are thin crust with house made tomato sauce and fresh mozzarella.</p>
         <div class="row pizza-options"> <!-- Size and sauce row -->
           <!--Spacer -->
           <div class="col-md-2"> <!-- Spacer column for medium screens -->
@@ -27,13 +29,13 @@
             <h4>Choose Your Size</h4>
             <div id="size-group">
               <label class="radio-inline">
-                <input type="radio" name="pizzaSize" id="smallSize" value="small"> Small $12.00
+                <input type="radio" name="pizzaSize" id="smallSize" value="small" checked="checked"> Small $8.00
               </label>
               <label class="radio-inline">
-                <input type="radio" name="pizzaSize" id="mediumSize" value="medium"> Medium $16.00
+                <input type="radio" name="pizzaSize" id="mediumSize" value="medium"> Medium $10.00
               </label>
               <label class="radio-inline">
-                <input type="radio" name="pizzaSize" id="largeSize" value="large"> Large $20.00
+                <input type="radio" name="pizzaSize" id="largeSize" value="large"> Large $12.00
               </label>
             </div> <!-- end radio group -->
           </div> <!-- End size column -->
@@ -42,13 +44,13 @@
             <h4>Choose Your Sauce</h4>
             <div id="sauce-group">
               <label class="radio-inline">
-                <input type="radio" name="pizzaSauce" id="marinaraSauce" value="marinara"> Tomato
+                <input type="radio" name="pizzaSauce" id="tomatoSauce" value="tomato sauce" checked="checked"> Tomato
               </label>
               <label class="radio-inline">
-                <input type="radio" name="pizzaSauce" id="pestoSauce" value="pesto"> Pesto
+                <input type="radio" name="pizzaSauce" id="pestoSauce" value="pesto"> Pesto $1.00
               </label>
               <label class="radio-inline">
-                <input type="radio" name="pizzaSauce" id="garlicSauce" value="garlic"> Garlic & Oil
+                <input type="radio" name="pizzaSauce" id="garlicSauce" value="garlic & oil"> Garlic & Oil $1.00
               </label>
             </div> <!-- end radio group -->
           </div> <!-- End sauce column -->
@@ -67,43 +69,43 @@
           <div class="col-md-4 col-sm-6">
             <div class="checkbox">
               <label>
-                <input type="checkbox" name="pepperoni" value="pepperoni">
+                <input type="checkbox" name="toppingOption" value="pepperoni">
                 Pepperoni $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="salami">
+                <input type="checkbox" name="toppingOption" value="salami">
                 Salami $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="prosciutto">
+                <input type="checkbox" name="toppingOption" value="prosciutto">
                 Prosciutto $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="ham">
+                <input type="checkbox" name="toppingOption" value="fennel sausage">
                 Fennel Sausage $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="feta">
+                <input type="checkbox" name="toppingOption" value="speck">
                 Speck $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="bellPepper">
-                Mushroom $2.00
+                <input type="checkbox" name="toppingOption" value="mushrooms">
+                Mushrooms $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="tomato">
+                <input type="checkbox" name="toppingOption" value="tomato">
                 Tomato $2.00
               </label>
             </div>
@@ -112,43 +114,43 @@
             <!-- <br> line break to even spacing with header -->
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="onion">
+                <input type="checkbox" name="toppingOption" value="onion">
                 Red Onion $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="arugula">
+                <input type="checkbox" name="toppingOption" value="arugula">
                 Arugula $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="spinach">
+                <input type="checkbox" name="toppingOption" value="spinach">
                 Spinach $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="artichoke">
+                <input type="checkbox" name="toppingOption" value="artichoke hearts">
                 Artichoke Hearts $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="oliveBlack">
+                <input type="checkbox" name="toppingOption" value="black olives">
                 Black Olives $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="oliveGreen">
+                <input type="checkbox" name="toppingOption" value="green olives">
                 Green Olives $2.00
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="oliveKalamata">
+                <input type="checkbox" name="toppingOption" value="walnuts">
                 Walnuts $2.00
               </label>
             </div>
@@ -159,9 +161,11 @@
         </div> <!-- End Topping Row -->
         <br>
         <div id="button-wrapper">
-          <button type="submit" id="placeOrder" class="btn btn-sm">Place Order</button>
+          <button type="submit" for="pizza-order" id="placeOrder" class="btn btn-sm">Place Order</button>
+          <div id="clearOrder" class="btn btn-sm">Clear Order</div>
         </div>
       </form>
+      <img src="img/new-rose-small.png" id="rose-logo-bot" class="img-responsive" alt="Rose Logo" />
       <div id="orderReceipt">
         <!-- Order to be displayed back here -->
       </div>
