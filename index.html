@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Amaro</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="page-header">
+        <h1>Pizza Amaro</h1>
+        <p>Wood fired pizza with your choice of toppings.
+      </div>
+      <br>
+      <form id="pizza-order">
+        <div class="row pizza-options"> <!-- Size and sauce row -->
+          <!--Spacer -->
+          <div class="col-md-2"> <!-- Spacer column for medium screens -->
+          </div>  <!-- End spacer -->
+  <!-- SIZE -->
+          <div class="col-md-4 col-sm-6"> <!-- Size column -->
+            <h4>Choose Your Size</h4>
+            <div id="size-group">
+              <label class="radio-inline">
+                <input type="radio" name="pizzaSize" id="smallSize" value="small"> Small $12.00
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="pizzaSize" id="mediumSize" value="medium"> Medium $16.00
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="pizzaSize" id="largeSize" value="large"> Large $20.00
+              </label>
+            </div> <!-- end radio group -->
+          </div> <!-- End size column -->
+  <!-- SAUCE -->
+          <div class="col-md-4 col-sm-6"> <!-- Sauce column -->
+            <h4>Choose Your Sauce</h4>
+            <div id="sauce-group">
+              <label class="radio-inline">
+                <input type="radio" name="pizzaSauce" id="marinaraSauce" value="marinara"> Tomato
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="pizzaSauce" id="pestoSauce" value="pesto"> Pesto
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="pizzaSauce" id="garlicSauce" value="garlic"> Garlic & Oil
+              </label>
+            </div> <!-- end radio group -->
+          </div> <!-- End sauce column -->
+          <!--Spacer -->
+          <div class="col-md-2"> <!-- Spacer column for medium screens -->
+          </div>  <!-- End spacer -->
+        </div> <!-- End size and sauce row -->
+  <!-- TOPPINGS -->
+        <br>
+        <br>
+        <div class="row pizza-options">
+          <h4 id="toppings-label">Choose Your Toppings</h4>
+          <!--Spacer -->
+          <div class="col-md-2"> <!-- Spacer column for medium screens -->
+          </div>  <!-- End spacer -->
+          <div class="col-md-4 col-sm-6">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="pepperoni" value="pepperoni">
+                Pepperoni $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="salami">
+                Salami $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="prosciutto">
+                Prosciutto $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="ham">
+                Fennel Sausage $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="feta">
+                Speck $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="bellPepper">
+                Mushroom $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="tomato">
+                Tomato $2.00
+              </label>
+            </div>
+            </div> <!-- End 1st topping column -->
+            <div class="col-md-4 col-sm-6">
+            <!-- <br> line break to even spacing with header -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="onion">
+                Red Onion $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="arugula">
+                Arugula $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="spinach">
+                Spinach $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="artichoke">
+                Artichoke Hearts $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="oliveBlack">
+                Black Olives $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="oliveGreen">
+                Green Olives $2.00
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="oliveKalamata">
+                Walnuts $2.00
+              </label>
+            </div>
+          </div> <!-- End second topping column -->
+          <!--Spacer -->
+          <div class="col-md-2"> <!-- Spacer column for medium screens -->
+          </div>  <!-- End spacer -->
+        </div> <!-- End Topping Row -->
+        <br>
+        <div id="button-wrapper">
+          <button type="submit" id="placeOrder" class="btn btn-sm">Place Order</button>
+        </div>
+      </form>
+      <div id="orderReceipt">
+        <!-- Order to be displayed back here -->
+      </div>
+      <div class="bottom-line"></div>
+    </div> <!-- End Container -->
+  </body>
+</html>

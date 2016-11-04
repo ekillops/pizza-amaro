@@ -1,0 +1,63 @@
+body {
+  background: url(../img/dark-embroidery.png);
+  margin: 30px;
+  color: #e7e6e4;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+ font-family: 'Roboto Slab', serif;
+}
+
+.container-fluid {
+  /*background-color: #43403d;*/
+  background-color: rgb(67, 64, 61);
+  background-color: rgba(67, 64, 61, .8);
+}
+
+
+@media screen and (min-width: 992px) {
+
+  body h4 {
+    text-align: center;
+  }
+
+  #sauce-group, #size-group{
+    text-align: center;
+  }
+
+
+  .checkbox {
+    margin-left: 100px;
+  }
+
+  .page-header {
+    text-align: center;
+  }
+
+  #button-wrapper {
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+  #toppings-label {
+    padding-left: 15px;
+  }
+
+}
+
+button#placeOrder {
+  background-color: #6b6661;
+
+}
+
+.bottom-line {
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #e7e6e4;
+  margin-bottom: 20px;
+}
